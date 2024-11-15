@@ -1,0 +1,162 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el cuerpo (body) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #000000; /* Fondo negro */
+}
+
+.navbar-logo img {
+    width: 150px; /* Tamaño del logo */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-buttons .btn {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.create-btn {
+    background-color: #2ecc71; /* Verde */
+    color: #000000;
+}
+
+.login-btn,
+.signup-btn {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.signup-btn {
+    background-color: #ff4081; /* Rosa */
+}
+
+/* Sección principal (Hero Section) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 50px;
+    background-color: #1e1e1e;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 500px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.hero-buttons .btn {
+    padding: 15px 25px;
+    font-size: 1em;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.signup-free-btn {
+    background-color: #27ae60; /* Verde brillante */
+    color: #000000; /* Texto en negro */
+}
+
+.learn-more-btn {
+    background-color: #333333; /* Gris oscuro */
+    color: #ffffff;
+}
+
+/* Pie de página (Footer) */
+.footer {
+    background-color: #333333; /* Fondo gris oscuro */
+    padding: 0; /* Sin padding en el footer principal */
+}
+
+.footer-links {
+    display: flex; /* Usar Flexbox para organizar los enlaces */
+    justify-content: space-between; /* Distribuir los enlaces a lo largo del ancho completo */
+    align-items: stretch; /* Alinear elementos para que ocupen la misma altura */
+    width: 100%; /* Ancho completo de la página */
+    border-top: 1px solid #555; /* Línea divisoria superior */
+}
+
+.footer-links a {
+    flex: 1; /* Cada enlace ocupa el mismo espacio */
+    text-align: center; /* Centrar el texto en cada enlace */
+    padding: 20px; /* Espaciado dentro de cada enlace */
+    background-color: #2e2e2e; /* Fondo oscuro de los enlaces */
+    color: #ffffff; /* Color blanco para el texto */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+    border-right: 1px solid #555; /* Borde derecho entre los enlaces */
+    box-sizing: border-box; /* Incluir el padding y border en el tamaño total */
+}
+
+/* Eliminar el borde derecho del último enlace para que no haya un borde extra al final */
+.footer-links a:last-child {
+    border-right: none;
+}
+
+/* Hover de los enlaces */
+.footer-links a:hover {
+    background-color: #444444; /* Cambiar el fondo al pasar el ratón */
+    color: #ff4081; /* Cambiar el color del texto al pasar el ratón */
+}
+
+/* Hover general para todos los botones */
+.btn:hover {
+    filter: brightness(1.2); /* Efecto de aclarar los botones al pasar el ratón */
+}
